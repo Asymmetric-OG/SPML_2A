@@ -1,4 +1,4 @@
-# 📚 rag q&a with langchain & streamlit
+# 📚 RAG q&a with langchain & streamlit
 
 ask questions based on research papers using a simple retrieval-augmented generation (rag) system.
 
