@@ -1,39 +1,39 @@
-📚 RAG Q&A with LangChain & Streamlit
-Ask questions based on research papers using a simple Retrieval-Augmented Generation (RAG) system.
+# 📚 rag q&a with langchain & streamlit
 
-🚀 Features
-Loads PDFs from the research/ folder
+ask questions based on research papers using a simple retrieval-augmented generation (rag) system.
 
-Splits and embeds text using all-mpnet-base-v2
+---
 
-Stores embeddings in a FAISS vector store
+## 🚀 features
 
-Uses flan-t5-base to generate answers
+- loads pdfs from the `research/` folder  
+- splits and embeds text using `all-mpnet-base-v2`  
+- stores embeddings in a faiss vector store  
+- uses `flan-t5-base` to generate answers  
+- streamlit-based interface for easy interaction
 
-Streamlit-based interface for easy interaction
+---
 
-🧠 How It Works
-PDFs are loaded and split into chunks
+## 🧠 how it works
 
-Chunks are embedded and stored in FAISS
+1. pdfs are loaded and split into chunks  
+2. chunks are embedded and stored in faiss  
+3. given a question, top-k relevant chunks are retrieved  
+4. `flan-t5-base` generates an answer using only the retrieved context
 
-Given a question, top-k relevant chunks are retrieved
+---
 
-flan-t5-base generates an answer using only the retrieved context
+## 📁 file overview
 
-📁 File Overview
-app.py: Streamlit frontend
+- `app.py`: streamlit frontend  
+- `rag_chain.py`: rag pipeline logic  
+- `research/`: folder with pdf documents
 
-rag_chain.py: RAG pipeline logic
+---
 
-research/: Folder with PDF documents
+## 🛠 built with
 
-🛠 Built With
-Hugging Face Transformers
-
-LangChain
-
-FAISS
-
-Streamlit
-
+- hugging face transformers  
+- langchain  
+- faiss  
+- streamlit
